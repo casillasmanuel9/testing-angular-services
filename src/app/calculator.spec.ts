@@ -38,8 +38,8 @@ describe('Test for calculator', () => {
       // Arrange
       const calculator = new Calculator();
       // Act and Assert
-      expect(calculator.divide(9,0)).toBeNull();
-      expect(calculator.divide(5,0)).toBeNull();
+      expect(calculator.divide(9,0)).toBeUndefined();
+      expect(calculator.divide(5,0)).toBeUndefined();
     });
   })
 

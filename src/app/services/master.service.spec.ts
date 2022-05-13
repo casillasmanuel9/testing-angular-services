@@ -2,7 +2,7 @@ import { ValueService } from './value.service';
 import { TestBed } from '@angular/core/testing';
 import { MasterService } from './master.service';
 
-fdescribe('MasterService', () => {
+describe('MasterService', () => {
   let masterService: MasterService;
   let valueService: jasmine.SpyObj<ValueService>;
 
