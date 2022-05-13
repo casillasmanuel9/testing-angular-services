@@ -13,4 +13,4 @@ jobs:
       - name: Install
         run: npm ci
       - name: Run test
-        run: ng test --no-watch --code-coverage --browsers=ChromeCI
+        run: npm test -- --no-watch --code-coverage --browsers=ChromeCI
