@@ -108,5 +108,8 @@
       }
     }
   },
-  "defaultProject": "ng-testing-services"
+  "defaultProject": "ng-testing-services",
+  "cli": {
+    "analytics": "824bf65e-b267-4f13-9b64-6bdd0c3e7876"
+  }
 }
