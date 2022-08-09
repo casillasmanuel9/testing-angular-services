@@ -5,7 +5,7 @@ import { PersonComponent } from '../person/person.component';
 
 import { PeopleComponent } from './people.component';
 
-fdescribe('PeopleComponent', () => {
+describe('PeopleComponent', () => {
   let component: PeopleComponent;
   let fixture: ComponentFixture<PeopleComponent>;
 
@@ -61,7 +61,6 @@ fdescribe('PeopleComponent', () => {
     const nameElement = fixture.debugElement.query(By.css('div ul > li'))?.nativeElement as HTMLElement;
     // Assert
     expect(nameElement?.textContent).toContain(expectPerson.name);
-
   });
 
 });

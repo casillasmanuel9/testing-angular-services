@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PicoPreviewComponent } from './components/pico-preview/pico-preview.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonComponent } from './components/person/person.component';
 import { ComponentsComponent } from './components/components.component';
 import { PeopleComponent } from './components/people/people.component';
+import { ProductComponent } from './components/product/product.component';
+import { OthersComponent } from './components/others/others.component';
+import { HighligthDirective } from './directives/highligth.directive';
+import { ReservePipe } from './pipes/reserve.pipe';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,18 @@ import { PeopleComponent } from './components/people/people.component';
     PicoPreviewComponent,
     PersonComponent,
     ComponentsComponent,
-    PeopleComponent
+    PeopleComponent,
+    ProductComponent,
+    OthersComponent,
+    HighligthDirective,
+    ReservePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     {
